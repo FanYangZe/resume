@@ -54,7 +54,8 @@ button:focus {
 /* web style */
 
 p {
-    padding: 2px 0;
+    padding: 3px 0;
+    line-height: 26px;
 }
 
 img {
@@ -140,7 +141,7 @@ body {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    flex: 350px;
+    flex: 300px;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -171,6 +172,10 @@ body {
     color: #666666;
 }
 
+.self-info .right p {
+    text-indent: 2em;
+}
+
 /* cards */
 
 .instrument {
@@ -188,12 +193,49 @@ body {
 .cards {
     font-size: 16px;
     text-align: center;
-    background-color: white;
     width: 250px;
     height: 300px;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
     margin: 10px;
+    position: relative;
+}
+
+.card01 {
+    background: url("images/card01.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.card02 {
+    background: url("images/card02.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.card03 {
+    background: url("images/card03.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.describe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.magnifier {
+    background-color: transparent;
+    border: none;
+    width: 26px;
+    cursor: pointer;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.magnifier:hover {
+    width: 32px;
 }
 
 /* paper */
@@ -249,14 +291,25 @@ body {
 /* gallery 1 */
 
 .gallery1-image {
-    flex: 200px;
-    flex-shrink: 0;
+    flex: 3;
     padding: 10px;
-    max-width: 300px;
+    max-width: 900px;
 }
 
 .gallery1-describe {
-    flex: 3;
+    flex: 2;
+    padding: 10px;
+    min-width: 300px;
+}
+
+.gallery2-image {
+    flex: 1;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.gallery2-describe {
+    flex: 2;
     padding: 10px;
     min-width: 300px;
 }
