@@ -17,6 +17,7 @@ body {
 
 body {
     line-height: 1;
+    font-family: "微軟正黑體", "Heiti TC", 'Segoe UI', Tahoma, sans-serif
 }
 
 ul li {
@@ -53,6 +54,8 @@ button:focus {
 p {
     padding: 3px 0;
     line-height: 26px;
+    font-family: "微軟正黑體", "Heiti TC", 'Segoe UI', Tahoma, sans-serif;
+    color: #666666;
 }
 
 img {
@@ -138,7 +141,7 @@ body {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    flex: 300px;
+    flex: 330px;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -173,9 +176,28 @@ body {
     text-indent: 2em;
 }
 
+/* row for cards and skill */
+
+.middle-content {
+    display: flex;
+}
+
+.skill-block {
+    flex: 1;
+    font-size: 0;
+    margin: 20px 0 20px 0;
+    padding: 0 20px 20px 20px;
+    background-color: white;
+}
+
+.skill-list {
+    font-size: 16px;
+}
+
 /* cards */
 
 .instrument {
+    flex: 2;
     font-size: 0;
     padding: 20px;
     margin-bottom: 20px;
@@ -272,6 +294,13 @@ body {
     border-radius: 50%;
     width: 35px;
     padding: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+}
+
+.close-screen:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .close-screen img {
@@ -303,8 +332,8 @@ body {
 /* paper */
 
 .topic {
-    color: #898989;
-    font-size: 12px;
+    text-align: center;
+    font-size: 18px;
     line-height: 20px;
     padding-top: 10px;
 }
@@ -395,6 +424,12 @@ footer {
     .gallery {
         flex-direction: column;
     }
+    .middle-content {
+        flex-direction: column;
+    }
+    .skill-block {
+        margin: 0 0 20px 0;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -436,6 +471,17 @@ footer {
     .close-screen {
         width: 28px;
         padding: 6px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .self-info .right p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .gallery,
+    .content p {
+        font-size: 20px;
     }
 }
 

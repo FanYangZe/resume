@@ -8,10 +8,6 @@ $(function () {
         changeGallery("gallery2");
         backgroundColor('ctrl2');
     });
-    $("#ctrl3").click(function () {
-        changeGallery("gallery3");
-        backgroundColor('ctrl3');
-    });
 
     $("#close-screen").click(function () {
         $("#bg-mask").css("display", "none");
