@@ -19,12 +19,9 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
-    list-style: none;
-    cursor: pointer;
+ul li {
     padding: 0;
-    margin: 0;
+    margin: 16px 0;
 }
 
 blockquote,
@@ -259,7 +256,7 @@ body {
     text-align: center;
     border-radius: 10px;
     z-index: 20;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .screen-header {
@@ -304,6 +301,13 @@ body {
 }
 
 /* paper */
+
+.topic {
+    color: #898989;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+}
 
 .gallery-slider {
     display: flex;
@@ -379,6 +383,11 @@ body {
     min-width: 300px;
 }
 
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
 @media screen and (max-width: 992px) {
     .self-info {
         width: 100%;
@@ -394,6 +403,39 @@ body {
     }
     .self-info .left {
         flex: 200px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        padding: 4px;
+    }
+    .content {
+        padding: 10px;
+    }
+    .instrument-row {
+        justify-content: space-around;
+    }
+    .screen {
+        width: 90vw;
+        height: 60vh;
+    }
+    .image-show {
+        display: none;
+        width: 90%;
+    }
+    .screen-header {
+        height: 30px;
+        margin: 5px;
+    }
+    .screen-content {
+        height: calc(100% - 30px);
+        width: 100%;
+        overflow: scroll;
+    }
+    .close-screen {
+        width: 28px;
+        padding: 6px;
     }
 }
 
