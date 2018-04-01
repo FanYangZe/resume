@@ -13,7 +13,19 @@ $(function () {
         backgroundColor('ctrl3');
     });
 
+    $("#close-screen").click(function () {
+        $("#bg-mask").css("display", "none");
+        $("#screen").fadeOut();
+    });
+
 });
+
+function showScreen(imgName) {
+    $(".image-show").css("display", "none");
+    $("#" + imgName).css("display", "inline-block");
+    $("#bg-mask").css("display", "block");
+    $("#screen").fadeIn();
+}
 
 function changeGallery(galleryID) {
     console.log($(this));

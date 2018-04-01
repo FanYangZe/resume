@@ -16,7 +16,7 @@
 		<div class="header">
 			<div class="self-photo">
 				<div class="face-border">
-					<img class="face-image" src="images/face.png">
+					<img class="face-image" src="images/face.jpg" />
 				</div>
 				<div class="photo-describe">
 					<p class="animated rubberBand">FAN YANG ZE</p>
@@ -27,13 +27,13 @@
 					<div class="tian-zige-row">
 						<div class="tian-zige">
 							<div class="icon">
-								<img src="images/contact.png">
+								<img src="images/contact.png" />
 							</div>
 							<p>揚澤</p>
 						</div>
 						<div class="tian-zige">
 							<div class="icon">
-								<img src="images/gift.png">
+								<img src="images/gift.png" />
 							</div>
 							<p>1992 / 10 / 03</p>
 						</div>
@@ -41,22 +41,24 @@
 					<div class="tian-zige-row">
 						<div class="tian-zige">
 							<div class="icon">
-								<img src="images/phone.png">
+								<img src="images/phone.png" />
 							</div>
 							<p>0932146368</p>
 						</div>
 						<div class="tian-zige">
 							<div class="icon">
-								<img src="images/mail.png">
+								<img src="images/mail.png" />
 							</div>
 							<p>ericfan1003@gmail.com</p>
 						</div>
 					</div>
 				</div>
 				<div class="right">
-					<p>我是范揚澤，畢業於台灣大學高分子研究所，論文方向是電致變色的研究。在台灣科技大學就學期間，參與陳志堅教授實驗室的專題研究， 開啟了我在高分子領域的研究之路，並有幸能加入到台大高分子所劉貴生教授的研究團隊，進一步的學習高分子與電化學相關的技術。
+					<p>於台灣科技大學就學期間，在
+						<u>陳志堅</u>教授實驗室的專題研究， 開啟了我的高分子領域研究之路。有幸能加入到台大高分子所
+						<u>劉貴生</u>教授的研究團隊，積極參與研討會，學習高分子與電化學相關的技術。 研究期間始終保持良好的學習態度，與實驗室的同伴協同合作、發表論文，目前尚有幾篇論文正在投稿中。
 					</p>
-					<p>研究期間，始終保持良好的學習態度並學習與同伴一起合作與且一同發表paper，尚有幾篇在投稿中。 在未來的職場生涯中，希望能充分發揮自己所學，並在職場的考驗下更加的精進自己，與公司一同成長。 感謝您撥冗閱讀我的自傳。</p>
+					<p>希望在未來的職場生涯中，能充分發揮所長，並在職場的考驗下更加的精進自己，與公司一同成長。感謝您撥冗閱讀我的自傳。</p>
 				</div>
 			</div>
 		</div>
@@ -66,36 +68,33 @@
 	<div class="instrument">
 		<div class="title-group">
 			<div class="icon">
-				<img src="images/chemical.png">
+				<img src="images/chemical.png" />
 			</div>
 			<span class="title">學歷證明</span>
 		</div>
 		<div class="instrument-row">
 			<div class="cards card01">
 				<div class="describe">
-					<button class="magnifier">
-						<img src="images/magnifier.png">
+					<div class="cards-info">
+						<p>國立台灣大學</p>
+						<p>高分子科學與工程研究所</p>
+					</div>
+
+					<button class="magnifier" id="show-card01" onclick="showScreen('imgShow01')">
+						<img src="images/magnifier.png" />
 					</button>
+
 				</div>
 			</div>
 			<div class="cards card02">
 				<div class="describe">
-					<button class="magnifier">
-						<img src="images/magnifier.png">
-					</button>
-				</div>
-			</div>
-			<div class="cards card03">
-				<div class="describe">
-					<button class="magnifier">
-						<img src="images/magnifier.png">
-					</button>
-				</div>
-			</div>
-			<div class="cards card04">
-				<div class="describe">
-					<button class="magnifier">
-						<img src="images/magnifier.png">
+					<div class="cards-info">
+						<p>國立台灣科技大學</p>
+						<p>材料科學與工程系</p>
+					</div>
+
+					<button class="magnifier" id="show-card02" onclick="showScreen('imgShow02')">
+						<img src="images/magnifier.png" />
 					</button>
 				</div>
 			</div>
@@ -105,15 +104,19 @@
 		<div class="paper">
 			<div class="title-group">
 				<div class="icon">
-					<img src="images/graduation.png">
+					<img src="images/graduation.png" />
 				</div>
 				<span class="title">論文</span>
+				<p style="color:#898989;font-size:12px;line-height:20px;">(1) D. C. Huang, J. T. Wu, Y, Z, Fan, and G. S. Liou* “Preparation and Optoelectronic Behaviours of Novel Electrochromic
+					Devices Based on Triphenylamine-containing Ambipolar Materials” J. Mater. Chem. C, 5, 9370-9375 (2017)(2016 SCI, IF:
+					5.265)
+				</p>
 			</div>
 			<div class="gallery-slider">
 				<div class="gallery-group">
 					<div class="gallery" id="gallery1">
 						<div class="gallery1-image">
-							<img src="images/gallery01.jpg">
+							<img src="images/gallery01.jpg" />
 						</div>
 						<div class="gallery1-describe">
 							<p>論文第一部分，使用silyl method polymerization製備了四種新型聚醚，TPA-PES，BDATA-PES，TPA-PEO和BDATA-PEO。 這些新型的聚合物由於醚鍵的關係而在許多溶劑中表現出良好的溶解性，而sulfone和oxadiazole提供聚合物的熱穩定性。並且，三苯胺衍生物所製備成的電活性聚醚膜顯示出從無色中性形式到多色電致變色行為。
@@ -122,7 +125,7 @@
 					</div>
 					<div class="gallery" id="gallery2" style="display:none;">
 						<div class="gallery2-image">
-							<img src="images/gallery02.jpg">
+							<img src="images/gallery02.jpg" />
 						</div>
 						<div class="gallery2-describe">
 							<p>在論文的第二部分中，我將具電活性的有機化合物與無機部分通過 Sol-gel 的方式，成功製備了混合膜。 BDATA-hybrid和TDATA-hybrid，並成功地展現從無色中性形式到不同氧化態的多色電致變色行為。 而且，這些聚合物薄膜的可逆性非常好，可以全部恢復到原來的狀態。
@@ -134,6 +137,11 @@
 						<div class="gallery1-image">
 						</div>
 						<div class="gallery1-describe">
+							<p>Small molecule synthesis</p>
+							<p>polymerization (PA，PI，PE)</p>
+							<p>Structural analysis</p>
+							<p>Eletrochromic divce prepartion</p>
+							<p>Electrochromic properties measurement</p>
 						</div>
 					</div>
 				</div>
@@ -148,6 +156,23 @@
 	<span style="font-size:12px; color:white;"> website Copyright © 2018 FAN, Yang-Ze</span>
 	<span style="font-size:12px; color:white;"> | </span>
 	<span style="font-size:12px; color:white;"> icon Copyright © 2013 islanddesign.de</span>
+
+	<div id="bg-mask" class="bg-mask"></div>
+	<div id="screen" class="screen">
+		<div class="screen-header">
+			<button id="close-screen" class="close-screen" type="button">
+				<img src="images/close.png" />
+			</button>
+		</div>
+		<div class="screen-content">
+			<div id="imgShow01" class="image-show">
+				<img src="images/card01.png" alt="magnifier image" />
+			</div>
+			<div id="imgShow02" class="image-show">
+				<img src="images/card02.png" alt="magnifier image" />
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
