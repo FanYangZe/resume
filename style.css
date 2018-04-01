@@ -239,12 +239,12 @@ body {
 }
 
 .cards-info {
-    color: white;
     text-align: center;
     padding: 3px 0;
 }
 
 .cards-info p {
+    color: white;
     line-height: 20px;
 }
 
